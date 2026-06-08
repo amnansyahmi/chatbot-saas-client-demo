@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KadKahwin.my</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="module" src="/src/main.jsx"></script>
+
+    <script>
+      window.AINonymauzChatbotConfig = {
+        clientId: "client_einvitation_demo",
+        apiBaseUrl: "http://localhost:8000",
+        theme: {
+          primaryColor: "#b85c38",
+          title: "KadKahwin Assistant",
+          welcomeMessage: "Hi! Need help choosing a wedding invitation package?"
+        }
+      };
+    </script>
+
+    <script src="http://localhost:8000/widget/chatbot-widget.js"></script>
+  </body>
+</html>

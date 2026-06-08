@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #fff7f3;
+  color: #2b1b16;
+}
+
+.site {
+  min-height: 100vh;
+}
+
+.navbar {
+  height: 72px;
+  padding: 0 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border-bottom: 1px solid #f1ddd4;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 22px;
+  color: #b85c38;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 24px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #4b332b;
+  font-weight: 600;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+  padding: 80px 48px;
+  align-items: center;
+}
+
+.badge {
+  display: inline-block;
+  background: #ffe2d3;
+  color: #a84826;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.hero h1 {
+  font-size: 54px;
+  line-height: 1.05;
+  margin: 18px 0;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 640px;
+}
+
+.actions {
+  margin-top: 28px;
+  display: flex;
+  gap: 14px;
+}
+
+button {
+  border: none;
+  background: #b85c38;
+  color: white;
+  padding: 14px 22px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: white;
+  color: #b85c38;
+  border: 1px solid #e7bba8;
+}
+
+.previewCard {
+  background: linear-gradient(145deg, #fff, #ffe5d8);
+  border: 1px solid #f2c7b5;
+  border-radius: 28px;
+  padding: 42px;
+  text-align: center;
+  box-shadow: 0 24px 60px rgba(184, 92, 56, 0.18);
+}
+
+.previewCard h2 {
+  font-size: 38px;
+  margin: 18px 0;
+}
+
+.previewCard .small {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 800;
+  color: #b85c38;
+}
+
+.section {
+  padding: 50px 48px;
+}
+
+.section h2 {
+  font-size: 34px;
+  margin-bottom: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.card,
+.priceCard {
+  background: white;
+  border: 1px solid #f1ddd4;
+  border-radius: 20px;
+  padding: 28px;
+  min-height: 140px;
+  box-shadow: 0 12px 30px rgba(80, 40, 20, 0.06);
+}
+
+.priceCard p {
+  font-size: 32px;
+  font-weight: 800;
+  color: #b85c38;
+  margin: 10px 0;
+}
+
+.featured {
+  border: 2px solid #b85c38;
+}
+
+details {
+  background: white;
+  border: 1px solid #f1ddd4;
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 14px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .navbar nav {
+    display: none;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 50px 20px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .section {
+    padding: 40px 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
