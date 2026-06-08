@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="site">
       <header className="navbar">
-        <div className="logo">KadKahwin.my</div>
+        <div className="logo">e-invite.my</div>
         <nav>
           <a href="#templates">Templates</a>
           <a href="#pricing">Pricing</a>
